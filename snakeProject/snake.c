@@ -138,7 +138,7 @@ void move_snake(int dir) // move snake
     }
     snake[0] = (x << 4) | y;
     
-    if(snake[0] == food)
+    if(snake[0] == food)  // when snake eat food
     {
         grow = true; 
         food = generate_food();
